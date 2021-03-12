@@ -24,7 +24,7 @@ except Exception as e:
     print('Failed to load session.conf:', repr(e))
     quit()
 
-client = TelegramClient(session_name, api_id, api_hash, process_updates=True)
+client = TelegramClient(session_name, api_id, api_hash)
 client.connect()
 
 try:
